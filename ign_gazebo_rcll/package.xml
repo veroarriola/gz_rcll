@@ -1,0 +1,20 @@
+<package format="2">
+  <name>ign_gazebo_rcll</name>
+  <version>1.0.0</version>
+  <description>
+    Escenario virtual estilo Robocup Logistics in Simulation.
+  </description>
+  <author>Vero E. Arriola</author>
+  <maintainer email="v.arriola@ciencias.unam.mx">Vero E. Arriola</maintainer>
+  <license>BSD</license>
+  <url type="bugtracker">https://github.com/kobuki-base/kobuki_ros/issues</url>
+  <url type="repository">https://github.com/kobuki-base/kobuki_ros</url>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>rcll_gz_models</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
