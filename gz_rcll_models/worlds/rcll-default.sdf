@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="default-field">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin
+      filename="ignition-gazebo-physics-system"
+      name="ignition::gazebo::systems::Physics">
+    </plugin>
+    <plugin
+      filename="ignition-gazebo-user-commands-system"
+      name="ignition::gazebo::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="ignition-gazebo-scene-broadcaster-system"
+      name="ignition::gazebo::systems::SceneBroadcaster">
+    </plugin>
+    <plugin
+      filename="ignition-gazebo-contact-system"
+      name="ignition::gazebo::systems::Contact">
+    </plugin>
+
+    <gui fullscreen="0">
+        <plugin filename="GzScene3D" name="3D View">
+            <ignition-gui>
+                <title>3D View</title>
+                <property type="bool" key="showTitleBar">false</property>
+                <property type="string" key="state">docked</property>
+            </ignition-gui>
+
+            <engine>ogre2</engine>
+            <scene>scene</scene>
+            <ambient_light>1.0 1.0 1.0</ambient_light>
+            <background_color>0.8 0.8 0.8</background_color>
+            <camera_pose>1 -2 9.5 0 1.1 1.56</camera_pose>
+        </plugin>
+    </gui>
+  </world>
+</sdf>
