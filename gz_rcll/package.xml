@@ -1,5 +1,5 @@
 <package format="2">
-  <name>ign_gazebo_rcll</name>
+  <name>gz_rcll</name>
   <version>1.0.0</version>
   <description>
     Escenario virtual estilo Robocup Logistics in Simulation.
@@ -12,7 +12,7 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <exec_depend>rcll_gz_models</exec_depend>
+  <exec_depend>gz_rcll_models</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
