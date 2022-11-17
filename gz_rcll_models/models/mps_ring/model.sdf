@@ -18,8 +18,8 @@
           <izz>1.53125</izz>
         </inertia>
       </inertial>
-       <visual name="body-visual">
-	<pose>-0.35 .172 0 0 0 1.57</pose>
+      <visual name="body-visual">
+        <pose>-0.35 .172 0 0 0 1.57</pose>
         <geometry>
           <mesh>
             <uri>model://models/mps_ring/meshes/mps_ring.dae</uri>
@@ -27,8 +27,8 @@
         </geometry>
 	<material>
           <script>
-            <uri>model://models/mps_ring/materials/scripts</uri>
-            <uri>model://models/mps_ring/materials/textures</uri>
+            <uri>file://models/mps_ring/materials/scripts/mps.material</uri>
+            <uri>file://models/mps_ring/materials/textures/</uri>
             <name>mps_ring</name>
           </script>
         </material>
