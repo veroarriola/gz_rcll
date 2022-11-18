@@ -22,13 +22,13 @@
         <pose>-0.35 .172 0 0 0 1.57</pose>
         <geometry>
           <mesh>
-            <uri>model://models/mps_ring/meshes/mps_ring.dae</uri>
+            <uri>model://mps_ring/meshes/mps_ring.dae</uri>
           </mesh>
         </geometry>
 	<material>
           <script>
-            <uri>file://models/mps_ring/materials/scripts/mps.material</uri>
-            <uri>file://models/mps_ring/materials/textures/</uri>
+            <uri>file://mps_ring/materials/scripts/mps.material</uri>
+            <uri>file://mps_ring/materials/textures/</uri>
             <name>mps_ring</name>
           </script>
         </material>
@@ -218,7 +218,7 @@
 
     <include>
       <name>light_signals</name>
-      <uri>model://models/light_signals/model.sdf</uri>
+      <uri>model://light_signals/model.sdf</uri>
       <pose>-0.2905 -0.113 0.915 0 0 0</pose>
     </include>
 

@@ -9,7 +9,15 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, ExecuteProcess
 from launch.substitutions import LaunchConfiguration
 
-os.environ['IGN_GAZEBO_RESOURCE_PATH'] = get_package_share_directory('gz_rcll_models')
+os.environ['IGN_GAZEBO_RESOURCE_PATH'] = \
+    os.path.join( get_package_share_directory('gz_rcll_models'),
+        'worlds'
+    ) + \
+    os.pathsep + os.path.join(
+        get_package_share_directory('gz_rcll_models'),
+        'models'
+    )
+print(os.environ['IGN_GAZEBO_RESOURCE_PATH'])
 
 def generate_launch_description():
     #use_sim_time = LaunchConfiguration('use_sim_time', default='true')
@@ -41,7 +49,7 @@ def generate_launch_description():
     return LaunchDescription([
         gz_rcll_launch_arg,
         ExecuteProcess(
-            cmd=['ign', 'gazebo', '-v', verbose, world],
+            cmd=['ign', 'gazebo', '-v', verbose, world_file_name],
             output='screen'),
 
         #ExecuteProcess(

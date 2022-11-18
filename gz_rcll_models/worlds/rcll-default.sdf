@@ -85,12 +85,19 @@
       <direction>-0.5 0.1 -0.9</direction>
     </light>
 
+    
     <include>
-      <uri>model://models/carologistics_robotino/model.sdf</uri>
+      <uri>model://robotino3/model.sdf</uri>
       <pose>0 0 0 0 0 0</pose>
     </include>
+    
     <include>
-      <uri>model://models/mps_ring/model.sdf</uri>
+      <uri>model://robotino/model.sdf</uri>
+      <pose>-4 0 0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <uri>model://mps_ring/model.sdf</uri>
       <pose>4.5 0.5 0 0 0 1.57</pose>
     </include>
 

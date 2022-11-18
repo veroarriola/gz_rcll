@@ -9,7 +9,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://models/sick_laser/meshes/hokuyo.dae</uri>
+            <uri>model://sick_laser/meshes/hokuyo.dae</uri>
           </mesh>
         </geometry>
         <cast_shadows>false</cast_shadows>
