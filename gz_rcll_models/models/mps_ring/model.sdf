@@ -22,9 +22,10 @@
         <pose>-0.35 .172 0 0 0 1.57</pose>
         <geometry>
           <mesh>
-            <uri>model://mps_ring/meshes/mps_ring.dae</uri>
+            <uri>model://mps_ring/meshes/mps_ring_wt.dae</uri>
           </mesh>
         </geometry>
+        <!--
 	<material>
           <script>
             <uri>file://mps_ring/materials/scripts/mps.material</uri>
@@ -32,6 +33,7 @@
             <name>mps_ring</name>
           </script>
         </material>
+        -->
         <cast_shadows>false</cast_shadows>
       </visual>
       
