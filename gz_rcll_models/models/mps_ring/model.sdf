@@ -22,7 +22,7 @@
         <pose>-0.35 .172 0 0 0 1.57</pose>
         <geometry>
           <mesh>
-            <uri>model://mps_ring/meshes/mps_ring_wt.dae</uri>
+            <uri>model://mps_ring/meshes/mps_ring_full.dae</uri>
           </mesh>
         </geometry>
         <!--

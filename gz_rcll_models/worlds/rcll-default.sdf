@@ -85,6 +85,10 @@
       <direction>-0.5 0.1 -0.9</direction>
     </light>
 
+    <include>
+      <uri>model://field/model.sdf</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
     
     <include>
       <uri>model://robotino3/model.sdf</uri>
